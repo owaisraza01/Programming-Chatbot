@@ -1,0 +1,132 @@
+/* Add this CSS in your main CSS file or a CSS module */
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+.jersey-25-charted-regular {
+  font-family: "Jersey 25 Charted", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.chatbotheader {
+  background-color: black;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding-top: 10px;
+  font-weight: 900;
+  font-family: 'Jersey 25 Charted', sans-serif;
+}
+
+.chat-interface {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+}
+
+.message-display {
+  flex: 1; /* Take up remaining space */
+  overflow-y: auto; /* Enable scrolling */
+  padding: 20px;
+  background-color: #f9f9f9; /* Light background for messages */
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.user {
+  align-self: flex-end;
+  background-color: black; /* Green color for user messages */
+  color: white;
+}
+
+.response {
+  align-self: flex-start;
+  background-color: #f1f1f1; /* Light gray color for response messages */
+  color: black;
+}
+
+.form-container {
+  padding: 10px;
+  background-color: white;
+  border-top: 1px solid #ddd;
+  display: flex;
+}
+.ml-2 {
+  border-radius: 5;
+}
+/* App.css */
+
+/* Add these styles to position the input field at the bottom and style the response messages */
+.chat-interface {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Set chat interface height to fill the viewport */
+}
+
+.message-display {
+  flex-grow: 1; /* Grow to fill remaining space */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 1rem; /* Add padding */
+  background-color: #f5f5f5; /* Set background color */
+}
+
+.user-input-form {
+  padding: 1rem; /* Add padding */
+  background-color: #fff; /* Set background color */
+  display: flex; /* Make form container a flexbox */
+  align-items: center; /* Align items vertically */
+}
+
+.user-input-form .queryinput {
+  flex: 1; /* Take up remaining space */
+  margin-right: 1rem; /* Add space between input and button */
+}
+
+.user-input-form .ml-2 {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center icon horizontally */
+  align-items: center; /* Center icon vertically */
+  border-radius: 9999px; /* Make button fully rounded */
+}
+
+.message {
+  padding: 0.5rem; /* Add padding */
+  margin-bottom: 0.5rem; /* Add margin between messages */
+  max-width: 70%; /* Limit message width */
+  border-radius: 0.5rem; /* Add border radius */
+}
+
+.user {
+  align-self: flex-end; /* Align user messages to the right */
+  background-color: black; /* Set background color for user messages */
+}
+
+.response {
+  align-self: flex-start; /* Align chatbot messages to the left */
+  background-color: #d4d4d4; /* Set background color for chatbot messages */
+}
+.user-input-form .queryinput {
+  flex: 1; /* Take up remaining space */
+  margin-right: 1rem; /* Add space between input and button */
+  border: 1px solid black; /* Set black border */
+}
+
+/* Add this style to remove outline when input field is clicked */
+.user-input-form .queryinput:focus {
+  outline: none; /* Remove outline */
+}
+
+
